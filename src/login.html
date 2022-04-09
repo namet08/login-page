@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <script src="login.js"></script>
+    <title>Login Page</title>
+</head>
+
+<body>
+    <form>
+        <h1>Login Page</h1>
+        <div>
+            <label class="insert-login">Your Email</label>
+            <input style="width: 13em" type="email" onblur="validateEmail()" onfocus="backMsg()" placeholder="Email" name="email" id="email" />
+            <span id="error-email"></span>
+        </div>
+        <div>
+            <p>
+                <label class="insert-passwd">Your Password</label>
+                <input style="width: 13em" type="password" placeholder="Password" name="password" id="password" />
+            </p>
+        </div>
+
+        <div>
+            <button class="submit-credential" type="submit" name="Enviar">
+          Enviar
+        </button>
+        </div>
+    </form>
+</body>
+
+</html>
